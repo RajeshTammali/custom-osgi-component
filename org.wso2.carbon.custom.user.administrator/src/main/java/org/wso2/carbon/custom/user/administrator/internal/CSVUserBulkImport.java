@@ -27,7 +27,7 @@ public class CSVUserBulkImport {
       String splitBy = ",";
       int headerRow = 0;
       CustomUserAdministrator administrator = new CustomUserAdministrator();
-      BufferedReader br = new BufferedReader(new FileReader("C:\\Home\\Test.csv"));
+      BufferedReader br = new BufferedReader(new FileReader("C:\\Home\\Test.csv")); /*CSV file location*/
       while ((line = br.readLine()) != null) {
         if (headerRow == 0) {
           headerRow++;
